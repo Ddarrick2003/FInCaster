@@ -6,7 +6,13 @@ from model.garch_model import forecast_garch_var
 from tensorflow.keras.callbacks import EarlyStopping
 
 st.set_page_config(page_title="FinCaster", layout="wide")
-st.title("🌞 FinCaster - Smart Financial Forecaster")
+from PIL import Image
+
+logo = Image.open("assets/logo.png")
+st.image(logo, width=120)
+st.title("FinCaster - Smart Financial Forecasting")
+
+st.title("FinCaster - Smart Financial Forecaster")
 
 uploaded_file = st.file_uploader("📥 Upload your OHLCV CSV file", type=["csv"])
 
