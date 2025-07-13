@@ -1,1 +1,8 @@
-# Dummy content for requirements.txt
+streamlit
+pandas
+numpy
+scikit-learn==1.2.2
+plotly
+tensorflow
+arch
+Pillow
